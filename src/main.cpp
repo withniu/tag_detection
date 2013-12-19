@@ -1,3 +1,8 @@
+// Detect April tag using the MIT April tag library
+// Yedong Niu
+// 12/2013
+
+
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
@@ -83,8 +88,8 @@ public:
     m_py(m_height/2)
   {
     // Subscrive to input video feed and publish output video feed
-    image_sub_ = it_.subscribe("/image_raw", 1, &ImageConverter::DetectTag, this);
-    image_pub_ = it_.advertise("/image_converter/output_video", 1);
+    image_sub_ = it_.subscribe("/image", 1, &ImageConverter::DetectTag, this);
+    image_pub_ = it_.advertise("/image_detection", 1);
 
     cv::namedWindow(OPENCV_WINDOW);
 
