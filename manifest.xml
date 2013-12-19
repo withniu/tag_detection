@@ -1,0 +1,22 @@
+<package>
+  <description brief="tag_detection">
+
+     tag_detection
+
+  </description>
+  <author>withniu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/tag_detection</url>
+  <depend package="tf"/>
+  <depend package="sensor_msgs"/>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="image_transport"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
+
+</package>
+
+
